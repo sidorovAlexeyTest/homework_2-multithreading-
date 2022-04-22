@@ -22,6 +22,3 @@ jobs:
         with:
           dependencies-cache-enabled: true
           arguments: clean build
-      - name: Run integration tests
-        timeout-minutes: 7
-        run: bash integration-test/test.sh
