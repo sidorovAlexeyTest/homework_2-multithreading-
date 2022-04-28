@@ -15,7 +15,7 @@ public class E2ETests {
 
     @Test
     void async_file_letter_counting_should_return_predicted_count() {
-        var file = getFile("test.txt");
+        var file = new File("src\\test\\resources\\test.txt");
         var counter = new AsyncFileLetterCounter();
 
         Map<Character, Long> count = counter.count(file);

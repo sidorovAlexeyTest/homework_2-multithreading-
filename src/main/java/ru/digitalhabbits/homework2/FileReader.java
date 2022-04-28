@@ -9,5 +9,5 @@ import java.util.stream.Stream;
 public interface FileReader {
 
     Stream<String> readLines(File file);
-
+    Integer linesCount();
 }
