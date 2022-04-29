@@ -9,6 +9,9 @@ public class LetterCounterImpl implements LetterCounter {
 
     @Override
     public Map<Character, Long> count(String input) {
+        if(input == null) {
+            return new HashMap<Character, Long>();
+        }
         return input.chars()
                 .mapToObj(e -> (char) e)
                 .collect(HashMap::new,
